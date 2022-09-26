@@ -1,0 +1,17 @@
+@import '/src/theme/index.scss';
+
+.home-container {
+  height: 100vh;
+  background-color: $color-primary-background;
+  padding: 50px 20px 0 20px;
+
+  .img-container {
+    background-color: $color-secondary-background;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+  }
+}

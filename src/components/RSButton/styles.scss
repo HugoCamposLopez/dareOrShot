@@ -1,0 +1,15 @@
+@import '/src/theme/index.scss';
+
+.button-principal {
+  min-height: 45px;
+  box-shadow: 0px 0px 5px 1px $color-gray;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  text-align: center;
+
+  span {
+    font-family: $font-family-primary-regular;
+    font-size: 15px;
+  }
+}

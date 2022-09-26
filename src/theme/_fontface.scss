@@ -1,0 +1,49 @@
+@import 'variables';
+
+@font-face {
+  font-family: $font-family-primary-extrabold;
+  src: url('./fonts/Jost-ExtraBold.ttf')format('truetype');
+  font-weight: $extrabold;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family-primary-bold;
+  src: url('./fonts/Jost-Bold.ttf') format('truetype');
+  font-weight: $bold;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family-primary-semibold;
+  src: url('./fonts/Jost-SemiBold.ttf') format('truetype');
+  font-weight: $semibold;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family-primary-medium;
+  src: url('./fonts/Jost-Medium.ttf') format('truetype');
+  font-weight: $medium;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family-primary-regular;
+  src: url('./fonts/Jost-Regular.ttf') format('truetype');
+  font-weight: $regular;
+  font-display: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family-primary-thin;
+  src: url('./fonts/Jost-Thin.ttf') format('truetype');
+  font-weight: $thin;
+  font-display: auto;
+  font-style: normal;
+}

@@ -1,7 +1,8 @@
 import React from 'react'
+import HomeContainer from '../../containers/HomeContainer/HomeContainer'
 
 const HomeScreen = () => {
-  return <div>HomeScreen</div>
+  return <HomeContainer />
 }
 
 export default HomeScreen
