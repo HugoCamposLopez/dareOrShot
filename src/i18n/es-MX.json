@@ -2,6 +2,7 @@
     "component.text.name": "Nombre",
     "component.text.placeholder": "Nombre",
     "component.text.error.text": "El nombre que ingresaste no es válido",
+    "component.dropdown.placeholder": "Número de jugadores",
     "example.hello": "Hola mundo",
     "example.hello1": "Hola desde la web"
   }
