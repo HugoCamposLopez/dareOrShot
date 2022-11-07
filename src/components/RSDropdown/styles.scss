@@ -1,0 +1,14 @@
+@import "/src/theme/index.scss";
+
+.dropdown-container {
+  .mantine-Select-input {
+    box-shadow: $shadow-inputs;
+    font-family: $font-family-primary-regular;
+  }
+
+  .mantine-rynikm {
+    font-family: $font-family-primary-regular;
+    box-shadow: $shadow-inputs;
+
+  }
+}
