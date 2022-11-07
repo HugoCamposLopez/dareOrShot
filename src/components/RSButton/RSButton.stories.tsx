@@ -2,7 +2,7 @@ import RSButton from './RSButton'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 export default {
-  title: 'Primary Button',
+  title: 'components/Primary Button',
   component: RSButton,
 } as ComponentMeta<typeof RSButton>
 

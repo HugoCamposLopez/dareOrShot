@@ -1,0 +1,44 @@
+@import '/src/theme/index.scss';
+
+.text-input-container {
+
+  &.error {
+    .mantine-TextInput-input {
+      border-color: $color-warning;
+      border-width: 2px;
+      color: $color-black;
+
+      &::placeholder {
+        color: $color-black;
+      }
+    }
+
+    .errorMessage {
+      font-family: $font-family-primary-medium;
+      margin: 5px 0 0 0;
+      font-size: 12px;
+      color: $color-warning;
+    }
+  }
+
+  p {
+    font-family: $font-family-primary-medium;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-width: 2px;
+
+  }
+
+  .mantine-TextInput-input {
+    font-family: $font-family-primary-medium;
+    font-size: 15px;
+
+    &::placeholder {
+      font-family: $font-family-primary-medium;
+
+    }
+  }
+
+
+}
