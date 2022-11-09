@@ -1,0 +1,13 @@
+@import '/src/theme/index.scss';
+
+.layout-container {
+  width: 100%;
+  background-color: $color-tertiary-background;
+  text-align: center;
+
+  .img-logo {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+}
