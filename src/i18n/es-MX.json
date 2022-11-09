@@ -3,6 +3,9 @@
     "component.text.placeholder": "Nombre",
     "component.text.error.text": "El nombre que ingresaste no es válido",
     "component.dropdown.placeholder": "Número de jugadores",
+    "component.radio.button.0": "Chicos bien",
+    "component.radio.button.1": "Pa' ponerte pedo!",
+    "component.radio.button.2": "Lo de arriba pero hot!",
     "example.hello": "Hola mundo",
     "example.hello1": "Hola desde la web"
   }
