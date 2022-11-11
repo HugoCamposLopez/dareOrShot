@@ -1,0 +1,11 @@
+@import '/src/theme/index.scss';
+.img-container {
+  background-color: $color-secondary-background;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  box-shadow: $shadow-inputs;
+}

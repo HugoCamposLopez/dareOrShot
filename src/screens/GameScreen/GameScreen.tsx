@@ -3,7 +3,7 @@ import './styles.scss'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/store'
 import { AppStates } from '../../utils/helpers/app.helpers'
-import GameInitialContainer from '../../containers/GameContainer/GameInitialContainer/GameInitialContainer'
+import GameWelcomeContainer from '../../containers/GameContainer/GameWelcomeContainer/GameWelcomeContainer'
 import GameRulesContainer from '../../containers/GameContainer/GameRulesContainer/GameRulesContainer'
 import GameNumbersOfPlayerContainer from '../../containers/GameContainer/GameNumbersOfPlayerContainer/GameNumbersOfPlayerContainer'
 import GameNameOfPlayersContainer from '../../containers/GameContainer/GameNameOfPlayersContainer/GameNameOfPlayersContainer'
@@ -15,7 +15,7 @@ const GameScreen = () => {
   const containerToRender = useCallback(() => {
     switch (stateOfGame) {
       case AppStates.welcome:
-        return <GameInitialContainer />
+        return <GameWelcomeContainer />
       case AppStates.rules:
         return <GameRulesContainer />
       case AppStates.numberOfPlayers:
