@@ -12,7 +12,7 @@ import GameTypeOfGameContainer from '../../containers/GameContainer/GameTypeOfGa
 import GamePlayContainer from '../../containers/GameContainer/GamePlayContainer/GamePlayContainer'
 
 const GameScreen = () => {
-  const { stateOfGame } = useSelector((state: RootState) => state)
+  const { stateOfGame } = useSelector((state: RootState) => state.userState)
   const containerToRender = useCallback(() => {
     switch (stateOfGame) {
       case AppStates.welcome:

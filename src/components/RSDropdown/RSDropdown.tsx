@@ -7,19 +7,21 @@ import './styles.scss'
 export interface RSDropdownProps {
   onChange: (val: string) => void
   value: string
+  error?: string | undefined
 }
 
-export const RSDropdown = ({ onChange, value }: RSDropdownProps) => {
-  const intl = useIntl()
+export const RSDropdown = ({ onChange, value, error }: RSDropdownProps) => {
+  const { formatMessage } = useIntl()
   return (
     <div className="dropdown-container">
       <Select
         data={numberOfPlayers}
-        placeholder={intl.formatMessage({
+        placeholder={formatMessage({
           id: 'component.dropdown.placeholder',
         })}
         value={value}
         onChange={onChange}
+        error={error && formatMessage({ id: error })}
       />
     </div>
   )

@@ -11,5 +11,7 @@
     "example.hello1": "Hola desde la web",
     "start.game": "¡Iniciar la peda!",
     "rules.text.1": "Este es un juego de retos, en caso de que no se cumpla el reto o si no quiere decir la verdad deberá tomarse un shot.",
-    "rules.text.2": "Hay ocasiones que solo tienes que tomar un shot porque si... y pues ¿por qué no?"
+    "rules.text.2": "Hay ocasiones que solo tienes que tomar un shot porque si... y pues ¿por qué no?",
+    "numbers.of.players.text": "Elige el numero de jugadores que desean jugar.",
+    "errors.number.of.players": "¿Cómo quieres avanzar si no has escogido el número de jugadores?"
   }

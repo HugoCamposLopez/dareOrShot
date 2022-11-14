@@ -5,7 +5,7 @@ import './styles.scss'
 
 export interface RSButtonProps {
   title: string
-  onClick: () => void
+  onClick?: () => void
   sumbit?: boolean
   loading?: boolean
   isDisable?: boolean
