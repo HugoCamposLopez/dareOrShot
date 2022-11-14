@@ -1,1 +1,24 @@
 @import '/src/theme/index.scss';
+
+.rules-container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: $color-primary-background;
+
+  .rules-description-1 {
+    margin: 30px 30px;
+    font-size: 22px;
+    font-family: $font-family-primary-medium;
+    color: $color-tertiary-background;
+    text-shadow: $shadow-inputs;
+  }
+
+  .rules-description-2 {
+    @extend .rules-description-1;
+  }
+
+  .button-container {
+    width: 60%;
+    margin: 100px auto;
+  }
+}

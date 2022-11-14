@@ -3,6 +3,7 @@ import './styles.scss'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/store'
 import { AppStates } from '../../utils/helpers/app.helpers'
+import withLayout from '../../utils/hoc/withLayout'
 import GameWelcomeContainer from '../../containers/GameContainer/GameWelcomeContainer/GameWelcomeContainer'
 import GameRulesContainer from '../../containers/GameContainer/GameRulesContainer/GameRulesContainer'
 import GameNumbersOfPlayerContainer from '../../containers/GameContainer/GameNumbersOfPlayerContainer/GameNumbersOfPlayerContainer'
@@ -17,15 +18,15 @@ const GameScreen = () => {
       case AppStates.welcome:
         return <GameWelcomeContainer />
       case AppStates.rules:
-        return <GameRulesContainer />
+        return withLayout(<GameRulesContainer />)
       case AppStates.numberOfPlayers:
-        return <GameNumbersOfPlayerContainer />
+        return withLayout(<GameNumbersOfPlayerContainer />)
       case AppStates.nameOfPlayers:
-        return <GameNameOfPlayersContainer />
+        return withLayout(<GameNameOfPlayersContainer />)
       case AppStates.typeOfGame:
-        return <GameTypeOfGameContainer />
+        return withLayout(<GameTypeOfGameContainer />)
       case AppStates.daresOrShots:
-        return <GamePlayContainer />
+        return withLayout(<GamePlayContainer />)
       default:
         break
     }
