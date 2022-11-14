@@ -1,5 +1,6 @@
 import { UnstyledButton, Loader } from '@mantine/core'
 import React from 'react'
+import { useIntl } from 'react-intl'
 import './styles.scss'
 
 export interface RSButtonProps {
@@ -17,6 +18,7 @@ const RSButton = ({
   loading,
   isDisable,
 }: RSButtonProps) => {
+  const intl = useIntl()
   return (
     <UnstyledButton
       className="button-principal"
@@ -25,7 +27,11 @@ const RSButton = ({
       type={sumbit ? 'submit' : 'button'}
       disabled={isDisable || loading}
     >
-      {loading ? <Loader size={'sm'} /> : <span>{title}</span>}
+      {loading ? (
+        <Loader size={'sm'} />
+      ) : (
+        <span>{intl.formatMessage({ id: title })}</span>
+      )}
     </UnstyledButton>
   )
 }
