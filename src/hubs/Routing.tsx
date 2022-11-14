@@ -6,7 +6,7 @@ import { WithProtectedRoutes } from '../utils/hoc/withProtectedRoutes'
 import { useSelector } from 'react-redux'
 import { RootState } from '../store/store'
 const Routing = () => {
-  const { stateOfGame } = useSelector((state: RootState) => state)
+  const { stateOfGame } = useSelector((state: RootState) => state.userState)
   return (
     <Routes>
       <Route
