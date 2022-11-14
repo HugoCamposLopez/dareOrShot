@@ -1,9 +1,9 @@
-import React from "react"
-import { Image } from "@mantine/core"
-import "./styles.scss"
+import React from 'react'
+import { Image } from '@mantine/core'
+import './styles.scss'
 
 export interface RSLogoI {
-  onClick: () => void
+  onClick?: () => void
 }
 const RSLogo = ({ onClick }: RSLogoI) => {
   return (
