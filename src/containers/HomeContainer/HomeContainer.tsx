@@ -1,5 +1,4 @@
 import React from "react"
-import { Image } from "@mantine/core"
 import "./styles.scss"
 import { useDispatch } from "react-redux"
 import { changeState } from "../../store/Slices/UserStateSlice/UserStateSlice"

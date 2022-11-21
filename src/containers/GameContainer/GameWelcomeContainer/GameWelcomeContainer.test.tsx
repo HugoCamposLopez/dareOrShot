@@ -1,0 +1,14 @@
+import React from "react"
+import { fireEvent, screen } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
+import { render } from "../../../utils/test.utils"
+import "@testing-library/jest-dom"
+import GameWelcomeContainer from "./GameWelcomeContainer"
+
+test('Loads image and button', () => {
+  render(<GameWelcomeContainer /> )
+  const logo = screen.getByTestId('logo-image')
+  const buttonText = screen.getByText('¡Iniciar la peda!')
+  expect(logo).toBeInTheDocument()
+  expect(buttonText).toBeInTheDocument()
+})

@@ -7,7 +7,7 @@ export interface RSLogoI {
 }
 const RSLogo = ({ onClick }: RSLogoI) => {
   return (
-    <div className="img-container" onClick={onClick}>
+    <div className="img-container" onClick={onClick} data-testid="logo-image">
       <Image src="./logo/logo.png" width={170} height={150} />
     </div>
   )
