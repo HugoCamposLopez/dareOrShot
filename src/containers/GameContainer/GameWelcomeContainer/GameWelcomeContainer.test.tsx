@@ -7,7 +7,7 @@ import GameWelcomeContainer from "./GameWelcomeContainer"
 
 test('Loads image and button', () => {
   render(<GameWelcomeContainer /> )
-  const logo = screen.getByTestId('logo-image')
+  const logo = screen.getByRole('img')
   const buttonText = screen.getByText('¡Iniciar la peda!')
   expect(logo).toBeInTheDocument()
   expect(buttonText).toBeInTheDocument()
