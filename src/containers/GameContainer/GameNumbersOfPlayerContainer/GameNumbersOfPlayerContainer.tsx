@@ -22,6 +22,7 @@ const GameNumbersOfPlayerContainer = () => {
   })
   const { control, handleSubmit, formState } = methods
   const { errors } = formState
+
   const [value, setValue] = useState('')
   const dispatch = useDispatch()
   const intl = useIntl()
@@ -53,7 +54,7 @@ const GameNumbersOfPlayerContainer = () => {
               }
             />
           </div>
-          <div className="numbers-button-container">
+          <div className={`numbers-button-container ${errors.numbers?.message ? "error" : "" }` }>
             <RSButton title="continue" sumbit />
           </div>
         </form>

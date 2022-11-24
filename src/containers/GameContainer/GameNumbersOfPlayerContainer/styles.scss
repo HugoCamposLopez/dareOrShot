@@ -22,5 +22,20 @@
   .numbers-button-container {
     @extend .numbers-dropdown-container;
     width: 50%;
+    &.error{
+      margin-top: 57px;
+    }
+  }
+.mantine-Select-wrapper{
+  .mantine-Input-invalid{
+    border-color: $color-warning;
+    border-width: 2px;
+
+  }
+}
+  .mantine-Select-error{
+    color: $color-warning;
+    font-family: $font-family-primary-bold;
+    font-size: 16px;
   }
 }
