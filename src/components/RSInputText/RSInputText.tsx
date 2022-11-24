@@ -4,7 +4,7 @@ import { useIntl } from 'react-intl'
 import './styles.scss'
 export interface RSInputTextProps {
   placeholder: string
-  isError: boolean
+  isError?: boolean
   value?: string
   onChange?: React.ChangeEventHandler<HTMLInputElement>
 }
@@ -23,7 +23,7 @@ export const RSInputText = ({
         onChange={onChange}
         error={isError}
         icon={
-          <Image width={25} height={25} src="./icons/glass-user-icon.svg" />
+          <Image width={25} height={25} src="./icons/glass-user-icon.svg" alt="input-icon" />
         }
         placeholder={intl.formatMessage({ id: placeholder })}
       />
