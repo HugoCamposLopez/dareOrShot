@@ -4,7 +4,7 @@ import { useIntl } from 'react-intl'
 import './styles.scss'
 export interface RSInputTextProps {
   placeholder: string
-  isError: boolean
+  isError?: boolean
   value?: string
   onChange?: React.ChangeEventHandler<HTMLInputElement>
 }

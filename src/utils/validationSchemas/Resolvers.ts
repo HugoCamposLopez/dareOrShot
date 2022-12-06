@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
 
-export const numberOfPlayersResolver = Yup.object().shape({
-  numbers: Yup.string().required("errors.number.of.players")
+export const nameOfPlayersResolver = Yup.object().shape({
+  inputNames: Yup.string().required("component.text.error.text")
 })

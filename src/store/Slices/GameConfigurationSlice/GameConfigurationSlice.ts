@@ -2,23 +2,26 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from '@reduxjs/toolkit'
 
 export interface GameConfirationInitialStateI{
-  numberOfPlayers: number
+  nameOfPlayers: {name: string|undefined}[]
 }
 
 const initialState: GameConfirationInitialStateI = {
-numberOfPlayers: 0
+nameOfPlayers: []
 }
 
 const GameConfigurationSlice = createSlice({
   initialState,
   name: "gameconfiguration",
   reducers: {
-    setNumberOfPlayers: (state, action: PayloadAction<number>) => {
-      state.numberOfPlayers = action.payload
+    addPlayer: (state, action: PayloadAction<string>) => {
+      state.nameOfPlayers.push({name: action.payload})
+    },
+    deletePlayer: (state, action: PayloadAction<string>) => {
+      state.nameOfPlayers = state.nameOfPlayers.filter((name) => action.payload !== name.name)
     }
   }
 })
 
-export const {setNumberOfPlayers} = GameConfigurationSlice.actions
+export const {addPlayer, deletePlayer} = GameConfigurationSlice.actions
 
 export default GameConfigurationSlice.reducer

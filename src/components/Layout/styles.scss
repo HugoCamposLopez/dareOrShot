@@ -1,13 +1,17 @@
 @import '/src/theme/index.scss';
-
-.layout-container {
-  width: 100%;
+.layout-container{
   background-color: $color-primary-background;
   text-align: center;
-
-  .img-logo {
+  .logo-container {
     width: 100%;
-    display: grid;
-    place-items: center;
+    background-color: $color-primary-background;
+    text-align: center;
+    min-height: $header-height;
+    
+    .img-logo {
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
   }
 }

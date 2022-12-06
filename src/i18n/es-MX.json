@@ -1,4 +1,5 @@
   {
+    "add.player": "Agregar jugador",
     "component.text.name": "Nombre",
     "component.text.placeholder": "Nombre",
     "component.text.error.text": "El nombre que ingresaste no es válido",
@@ -12,6 +13,8 @@
     "start.game": "¡Iniciar la peda!",
     "rules.text.1": "Este es un juego de retos, en caso de que no se cumpla el reto o si no quiere decir la verdad deberá tomarse un shot.",
     "rules.text.2": "Hay ocasiones que solo tienes que tomar un shot porque si... y pues ¿por qué no?",
+    "names.text.1": "Para empezar no se como se llaman...",
+    "names.text.2": "Escribe el nombre de cada jugador",
     "numbers.of.players.text": "Elige el numero de jugadores que desean jugar.",
     "errors.number.of.players": "¿Cómo quieres avanzar si no has escogido el número de jugadores?"
   }

@@ -10,8 +10,7 @@ export const enum AppStates{
   initial = 0,
   welcome = 1,
   rules = 2,
-  numberOfPlayers = 3,
-  nameOfPlayers = 4,
-  typeOfGame = 5,
-  daresOrShots = 6
+  nameOfPlayers = 3,
+  typeOfGame = 4,
+  daresOrShots = 5
 } 
