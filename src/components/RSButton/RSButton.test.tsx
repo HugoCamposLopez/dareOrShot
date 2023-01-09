@@ -7,7 +7,6 @@ import "@testing-library/jest-dom"
 
 describe("Button functionality", () => {
   const onClick = jest.fn()
-  
   test("render button", () => {
     render(<RSButton title="example.hello" onClick={onClick} />)
     const button = screen.getByRole("button")
@@ -16,12 +15,11 @@ describe("Button functionality", () => {
 
   test("Label is correct", () => {
     render(<RSButton title="example.hello" onClick={onClick} />)
-    //const buttonLabel = screen.getByText(/hola mundo/i)
-     const buttonLabel = screen.getByText(intl.formatMessage({id: "example.hello"}))
-    expect(buttonLabel).toBeInTheDocument()
-    expect(buttonLabel).toHaveTextContent(intl.formatMessage({id: "example.hello"}))
+    //const button = screen.getByText(/hola mundo/i)
+    const button = screen.getByText(intl.formatMessage({id: "example.hello"}))
+    expect(button).toHaveTextContent(intl.formatMessage({id: "example.hello"}))
   })
-
+  
   test("Button onClick working", () => {
     render(<RSButton title="example.hello" onClick={onClick} />)
     const button = screen.getByRole("button")
@@ -30,3 +28,7 @@ describe("Button functionality", () => {
   })
 })
 
+
+describe('Nombre del grupo de test', () => {
+
+})

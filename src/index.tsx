@@ -1,21 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import * as serviceWorkerRegistration from './serviceWorkerRegistration'
-import reportWebVitals from './reportWebVitals'
-import { IntlProvider } from 'react-intl'
-import Spanish from './i18n/es-MX.json'
+import React from "react"
+import ReactDOM from "react-dom/client"
+import App from "./App"
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration"
+import reportWebVitals from "./reportWebVitals"
+import { IntlProvider } from "react-intl"
+import Spanish from "./i18n/es-MX.json"
+
 interface LocaleConfig {
   [key: string]: any
 }
 const local = navigator.language
 const messages: LocaleConfig = Spanish
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <React.StrictMode>
-    <IntlProvider locale={local} messages={messages} defaultLocale="es">
-      <App />
-    </IntlProvider>
+      <IntlProvider locale={local} messages={messages} defaultLocale="es">
+        <App />
+      </IntlProvider>
   </React.StrictMode>
 )
 

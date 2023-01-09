@@ -11,7 +11,7 @@ const onClick = () => {
   alert('Click')
 }
 export const PrimaryButton: ComponentStory<typeof RSButton> = () => withProviders(
-  <RSButton title="Iniciar la peda" onClick={onClick} />
+  <RSButton title="example.hello" onClick={onClick} />
 )
 
 export const PrimaryLoadingButton: ComponentStory<typeof RSButton> = () => withProviders(
