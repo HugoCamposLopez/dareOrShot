@@ -21,7 +21,7 @@ const RSButton = ({
   const intl = useIntl()
   return (
     <UnstyledButton
-      className="button-principal"
+      className={`button-principal ${!isDisable ? "" : "isValid"}`}
       color={'white'}
       onClick={onClick}
       type={sumbit ? 'submit' : 'button'}

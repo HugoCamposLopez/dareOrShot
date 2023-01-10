@@ -6,7 +6,6 @@ import { AppStates } from '../../utils/helpers/app.helpers'
 import withLayout from '../../utils/hoc/withLayout'
 import GameWelcomeContainer from '../../containers/GameContainer/GameWelcomeContainer/GameWelcomeContainer'
 import GameRulesContainer from '../../containers/GameContainer/GameRulesContainer/GameRulesContainer'
-import GameNumbersOfPlayerContainer from '../../containers/GameContainer/GameNumbersOfPlayerContainer/GameNumbersOfPlayerContainer'
 import GameNameOfPlayersContainer from '../../containers/GameContainer/GameNameOfPlayersContainer/GameNameOfPlayersContainer'
 import GameTypeOfGameContainer from '../../containers/GameContainer/GameTypeOfGameContainer/GameTypeOfGameContainer'
 import GamePlayContainer from '../../containers/GameContainer/GamePlayContainer/GamePlayContainer'
@@ -19,8 +18,6 @@ const GameScreen = () => {
         return <GameWelcomeContainer />
       case AppStates.rules:
         return withLayout(<GameRulesContainer />)
-      case AppStates.numberOfPlayers:
-        return withLayout(<GameNumbersOfPlayerContainer />)
       case AppStates.nameOfPlayers:
         return withLayout(<GameNameOfPlayersContainer />)
       case AppStates.typeOfGame:

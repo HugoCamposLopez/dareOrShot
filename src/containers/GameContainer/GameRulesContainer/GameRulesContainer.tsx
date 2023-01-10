@@ -20,7 +20,7 @@ const GameRulesContainer = () => {
       <div className="button-container">
         <RSButton
           title="continue"
-          onClick={() => dispatch(changeState(AppStates.numberOfPlayers))}
+          onClick={() => dispatch(changeState(AppStates.nameOfPlayers))}
         />
       </div>
     </div>
