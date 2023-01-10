@@ -3,6 +3,7 @@
     "component.text.name": "Nombre",
     "component.text.placeholder": "Nombre",
     "component.text.error.text": "El nombre que ingresaste no es válido",
+    "component.text.min": "Mínimo 3 caracteres como nombre",
     "component.dropdown.placeholder": "Número de jugadores",
     "component.radio.button.0": "Chicos bien",
     "component.radio.button.1": "Pa' ponerte pedo!",

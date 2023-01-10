@@ -17,15 +17,18 @@ import {
   deletePlayer,
 } from "../../../store/Slices/GameConfigurationSlice/GameConfigurationSlice"
 import { changeState } from "../../../store/Slices/UserStateSlice/UserStateSlice"
+import { useNavigate } from "react-router-dom"
 import { AppStates } from "../../../utils/helpers/app.helpers"
 
 const TextInputController = withTextInputController(RSInputText)
 
 const GameNameOfPlayersContainer = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch()
   const { nameOfPlayers } = useSelector(
     (state: RootState) => state.gameconfiguration
   )
+  console.log(nameOfPlayers)
   const intl = useIntl()
   const methods = useForm({
     mode: "onChange",
@@ -44,7 +47,7 @@ const GameNameOfPlayersContainer = () => {
   }
 
   const continueToTypeGame = () => { 
-    nameOfPlayers.length > dispatch(changeState(AppStates.typeOfGame))
+    nameOfPlayers.length > 1 ? dispatch(changeState(AppStates.typeOfGame)) : alert("Neceitas mas de un jugador para poder continuar, no mames como vas a jugar solo")
   }
   return (
     <div className="name-of-player-container">
@@ -72,12 +75,12 @@ const GameNameOfPlayersContainer = () => {
             <RSList list={nameOfPlayers} onClick={deletePlayers} />
           </div>
           <div className="button-container">
-            <RSButton title="add.player" sumbit />
+            <RSButton title="add.player" sumbit  isDisable={!isValid}/>
           </div>
         </form>
       </FormProvider>
-      <div>
-        <RSButton title="continue" onClick={}/>
+      <div className="button-container-continue">
+        <RSButton title="continue" onClick={continueToTypeGame}/>
       </div>
     </div>
   )
