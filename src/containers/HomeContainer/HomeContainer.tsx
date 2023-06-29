@@ -16,7 +16,7 @@ const HomeContainer = () => {
   }
   
   return (
-    <div className="home-container">
+    <div className="home-containerr">
       <RSLogo onClick={navigateToWelcome} />
     </div>
   )
