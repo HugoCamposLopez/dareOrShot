@@ -25,8 +25,12 @@
     
   }
   .listNames-container{
-    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
     padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
   }
 
   .button-container {

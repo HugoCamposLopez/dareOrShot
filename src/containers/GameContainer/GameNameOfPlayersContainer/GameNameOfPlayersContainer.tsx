@@ -19,6 +19,7 @@ import {
 import { changeState } from "../../../store/Slices/UserStateSlice/UserStateSlice"
 import { useNavigate } from "react-router-dom"
 import { AppStates } from "../../../utils/helpers/app.helpers"
+import { RSChip } from "../../../components/RSChip/RSChip"
 
 const TextInputController = withTextInputController(RSInputText)
 
@@ -35,7 +36,7 @@ const GameNameOfPlayersContainer = () => {
     resolver: yupResolver(nameOfPlayersResolver),
   })
   const { control, handleSubmit, formState, resetField } = methods
-  const { isValid } = formState
+  const { isValid, isDirty } = formState
 
   const handleSubmitNames = (data: any) => {
     dispatch(addPlayer(data.inputNames))
@@ -46,7 +47,7 @@ const GameNameOfPlayersContainer = () => {
     dispatch(deletePlayer(name))
   }
 
-  const continueToTypeGame = () => { 
+  const continueToTypeGame = () => {
     nameOfPlayers.length > 1 ? dispatch(changeState(AppStates.typeOfGame)) : alert("Neceitas mas de un jugador para poder continuar, no mames como vas a jugar solo")
   }
   return (
@@ -67,20 +68,24 @@ const GameNameOfPlayersContainer = () => {
                 placeholder={intl.formatMessage({
                   id: "component.text.placeholder",
                 })}
-                isError={!isValid}
+                isError={!isValid && isDirty}
               />
             </div>
           </div>
           <div className="listNames-container">
-            <RSList list={nameOfPlayers} onClick={deletePlayers} />
+            {nameOfPlayers.map((user, index) => {
+              return (
+                <RSChip key={index} user={user} onClick={deletePlayers} />
+              )
+            })}
           </div>
           <div className="button-container">
-            <RSButton title="add.player" sumbit  isDisable={!isValid}/>
+            <RSButton title="add.player" sumbit isDisable={!isValid} />
           </div>
         </form>
       </FormProvider>
       <div className="button-container-continue">
-        <RSButton title="continue" onClick={continueToTypeGame}/>
+        <RSButton title="continue" onClick={continueToTypeGame} />
       </div>
     </div>
   )

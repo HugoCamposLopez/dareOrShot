@@ -3,12 +3,17 @@ import React from 'react'
 import { useIntl } from 'react-intl'
 import './styles.scss'
 
-export interface RSRadioButtonProps {
+interface RadioOptions{
   value: string
+  label: string
+}
+export interface RSRadioButtonProps {
+  options: RadioOptions
   onChange: (val: string) => void
+  value: string
 }
 
-const RSRadioButton = ({ value, onChange }: RSRadioButtonProps) => {
+const RSRadioButton = ({ options, onChange, value }: RSRadioButtonProps) => {
   const intl = useIntl()
   return (
     <div>

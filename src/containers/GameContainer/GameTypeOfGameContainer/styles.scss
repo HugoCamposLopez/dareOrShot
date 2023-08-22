@@ -1,1 +1,13 @@
 @import '/src/theme/index.scss';
+
+.gametype-container{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  h1{
+    font-family: $font-family-primary-regular;
+    font-size: 36px;
+    color: $color-tertiary-background;
+  }
+}

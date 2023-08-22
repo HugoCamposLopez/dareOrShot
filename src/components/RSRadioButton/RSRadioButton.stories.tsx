@@ -10,5 +10,9 @@ export default {
 
 export const RSRadioButtonDefault = () => {
   const [value1, setValue1] = useState('')
-  return withProviders(<RSRadioButton onChange={setValue1} value={value1} />)
+  const options = {
+    value: "Hello",
+    label: "1"
+  }
+  return withProviders(<RSRadioButton onChange={setValue1} value={value1} options={options}/>)
 }
