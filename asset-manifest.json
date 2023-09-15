@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dareOrShot/static/css/main.7a6ec0b4.css",
-    "main.js": "/dareOrShot/static/js/main.8ded68bf.js",
+    "main.css": "/dareOrShot/static/css/main.95e5c248.css",
+    "main.js": "/dareOrShot/static/js/main.a58ee7e3.js",
     "static/js/787.31c3d910.chunk.js": "/dareOrShot/static/js/787.31c3d910.chunk.js",
     "static/media/Jost-ExtraBold.ttf": "/dareOrShot/static/media/Jost-ExtraBold.5ed7aa2b4bbb5c266355.ttf",
     "static/media/Jost-Medium.ttf": "/dareOrShot/static/media/Jost-Medium.6b59eccdfbb145802814.ttf",
@@ -11,12 +11,12 @@
     "static/media/Jost-Regular.ttf": "/dareOrShot/static/media/Jost-Regular.ca33bfb0214ee2e6936a.ttf",
     "service-worker.js": "/dareOrShot/service-worker.js",
     "index.html": "/dareOrShot/index.html",
-    "main.7a6ec0b4.css.map": "/dareOrShot/static/css/main.7a6ec0b4.css.map",
-    "main.8ded68bf.js.map": "/dareOrShot/static/js/main.8ded68bf.js.map",
+    "main.95e5c248.css.map": "/dareOrShot/static/css/main.95e5c248.css.map",
+    "main.a58ee7e3.js.map": "/dareOrShot/static/js/main.a58ee7e3.js.map",
     "787.31c3d910.chunk.js.map": "/dareOrShot/static/js/787.31c3d910.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a6ec0b4.css",
-    "static/js/main.8ded68bf.js"
+    "static/css/main.95e5c248.css",
+    "static/js/main.a58ee7e3.js"
   ]
 }
