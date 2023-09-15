@@ -1,15 +1,14 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import Routing from './hubs/Routing'
 import { store } from './store/store'
 import { Provider } from 'react-redux'
+import HomeScreen from './screens/HomeScreen/HomeScreen'
+
+
 function App () {
   return (
-    <BrowserRouter>
       <Provider store={store}>
-        <Routing />
+       <HomeScreen />
       </Provider>
-    </BrowserRouter>
   )
 }
 

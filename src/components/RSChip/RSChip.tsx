@@ -9,7 +9,7 @@ export function RSChip ({ onClick, user }: RSChipsProps) {
   return (
     <div className='container-chip'>
       <span>{user.name}</span>
-      <Image src='../icons/x-symbol.svg' width={10} height={10} className='chip-x-icon' onClick={() => user.name && onClick(user.name)} />
+      <Image src='../dareOrShot/icons/x-symbol.svg' width={10} height={10} className='chip-x-icon' onClick={() => user.name && onClick(user.name)} />
     </div>
   )
 }

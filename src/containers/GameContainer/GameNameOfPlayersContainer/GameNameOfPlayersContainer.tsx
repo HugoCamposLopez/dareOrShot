@@ -25,7 +25,6 @@ const GameNameOfPlayersContainer = () => {
   const { nameOfPlayers } = useSelector(
     (state: RootState) => state.gameconfiguration
   )
-  console.log(nameOfPlayers)
   const intl = useIntl()
   const methods = useForm({
     mode: 'onChange',

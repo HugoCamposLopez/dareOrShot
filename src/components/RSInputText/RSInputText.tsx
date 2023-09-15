@@ -23,7 +23,7 @@ export const RSInputText = ({
         onChange={onChange}
         error={isError}
         icon={
-          <Image width={25} height={25} src='./icons/glass-user-icon.svg' />
+          <Image width={25} height={25} src='/dareOrShot/icons/glass-user-icon.svg' />
         }
         placeholder={intl.formatMessage({ id: placeholder })}
       />
