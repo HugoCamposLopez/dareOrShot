@@ -13,11 +13,11 @@ export interface RSDropdownProps {
 export const RSDropdown = ({ onChange, value, error }: RSDropdownProps) => {
   const { formatMessage } = useIntl()
   return (
-    <div className="dropdown-container">
+    <div className='dropdown-container'>
       <Select
         data={numberOfPlayers}
         placeholder={formatMessage({
-          id: 'component.dropdown.placeholder',
+          id: 'component.dropdown.placeholder'
         })}
         value={value}
         onChange={onChange}

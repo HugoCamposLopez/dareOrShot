@@ -1,7 +1,8 @@
-import { Controller } from "react-hook-form"
+import React from 'react'
+import { Controller } from 'react-hook-form'
 import {
-  RSInputTextProps,
-} from "../../components/RSInputText/RSInputText"
+  RSInputTextProps
+} from '../../components/RSInputText/RSInputText'
 
 interface RSTextInputsPropsHoc extends RSInputTextProps {
   name: string
@@ -10,6 +11,7 @@ interface RSTextInputsPropsHoc extends RSInputTextProps {
 }
 
 const withTextInputController = (
+  // eslint-disable-next-line no-undef
   WrappedComponent: (props: RSInputTextProps) => JSX.Element
 ) => {
   const WithTextInputController = (props: RSTextInputsPropsHoc) => {
@@ -22,6 +24,7 @@ const withTextInputController = (
           return (
             <WrappedComponent
               value={field.value}
+              // eslint-disable-next-line react/jsx-handler-names
               onChange={field.onChange}
               {...props}
             />

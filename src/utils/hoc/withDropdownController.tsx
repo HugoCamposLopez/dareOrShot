@@ -9,6 +9,7 @@ interface RSDropdownPropsHOC extends RSDropdownProps {
 }
 
 const withDropdownController = (
+  // eslint-disable-next-line no-undef
   WrappedComponent: (props: RSDropdownProps) => JSX.Element
 ) => {
   const WithDropdownController = (props: RSDropdownPropsHOC) => {
@@ -22,6 +23,7 @@ const withDropdownController = (
           return (
             <WrappedComponent
               {...props}
+              // eslint-disable-next-line react/jsx-handler-names
               onChange={field.onChange}
               value={field.value}
             />

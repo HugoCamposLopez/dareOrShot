@@ -13,7 +13,7 @@ const messages: LocaleConfig = Spanish
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <IntlProvider locale={local} messages={messages} defaultLocale="es-MX">
+    <IntlProvider locale={local} messages={messages} defaultLocale='es-MX'>
       <App />
     </IntlProvider>
   </React.StrictMode>

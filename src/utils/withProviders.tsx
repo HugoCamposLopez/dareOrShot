@@ -10,7 +10,7 @@ const messages: LocaleConfig = Spanish
 
 const withProviders = (component: React.ReactNode) => {
   return (
-    <IntlProvider locale={local} messages={messages} defaultLocale="es">
+    <IntlProvider locale={local} messages={messages} defaultLocale='es'>
       {component}
     </IntlProvider>
   )

@@ -5,7 +5,7 @@ import { RSDropdown } from './RSDropdown'
 
 export default {
   title: 'components/RSDropdown',
-  component: RSDropdown,
+  component: RSDropdown
 } as ComponentMeta<typeof RSDropdown>
 
 export const DefaultDropdown: ComponentStory<typeof RSDropdown> = () => {

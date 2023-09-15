@@ -3,12 +3,12 @@ import React from 'react'
 import { useIntl } from 'react-intl'
 import './styles.scss'
 
-interface RadioOptions{
+export interface RadioOptions {
   value: string
   label: string
 }
 export interface RSRadioButtonProps {
-  options: RadioOptions
+  options: RadioOptions[]
   onChange: (val: string) => void
   value: string
 }
@@ -18,23 +18,21 @@ const RSRadioButton = ({ options, onChange, value }: RSRadioButtonProps) => {
   return (
     <div>
       <Radio.Group
-        className="radio-group-container"
+        className='radio-group-container'
         withAsterisk
         value={value}
         onChange={onChange}
       >
-        <Radio
-          value="0"
-          label={intl.formatMessage({ id: 'component.radio.button.0' })}
-        />
-        <Radio
-          value="1"
-          label={intl.formatMessage({ id: 'component.radio.button.1' })}
-        />
-        <Radio
-          value="2"
-          label={intl.formatMessage({ id: 'component.radio.button.2' })}
-        />
+        {options.map((option) => {
+          return (
+            <Radio
+              value={option.value}
+              label={intl.formatMessage({ id: option.label })}
+              key={option.value}
+            />
+          )
+        })}
+
       </Radio.Group>
     </div>
   )

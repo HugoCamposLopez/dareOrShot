@@ -8,7 +8,7 @@ interface WithProtectedRoutesI {
 }
 
 export const WithProtectedRoutes = ({
-  stateOfUser,
+  stateOfUser
 }: WithProtectedRoutesI): React.ReactElement => {
   if (stateOfUser === AppStates.initial) {
     return <HomeScreen />

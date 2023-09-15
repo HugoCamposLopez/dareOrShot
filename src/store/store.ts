@@ -1,18 +1,17 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import UserStateSlice from './Slices/UserStateSlice/UserStateSlice'
-import GameConfigurationSlice from './Slices/GameConfigurationSlice/GameConfigurationSlice';
-import storage from 'redux-persist/lib/storage';
-import { persistReducer, persistStore } from 'redux-persist';
-import thunk from 'redux-thunk';
+import GameConfigurationSlice from './Slices/GameConfigurationSlice/GameConfigurationSlice'
+import storage from 'redux-persist/lib/storage'
+import { persistReducer, persistStore } from 'redux-persist'
+import thunk from 'redux-thunk'
 
 const persistConfig = {
   key: 'root',
-  storage,
+  storage
 }
 
-const reducers = combineReducers({gameconfiguration: GameConfigurationSlice, userState: UserStateSlice})
-const persistedReducer = persistReducer(persistConfig, reducers )
-
+const reducers = combineReducers({ gameconfiguration: GameConfigurationSlice, userState: UserStateSlice })
+const persistedReducer = persistReducer(persistConfig, reducers)
 
 export const store = configureStore({
   reducer: persistedReducer,
@@ -22,4 +21,3 @@ export const store = configureStore({
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
 export const persistor = persistStore(store)
-

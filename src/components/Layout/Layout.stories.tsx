@@ -4,7 +4,7 @@ import Layout from './Layout'
 
 export default {
   title: 'components/Layout',
-  component: Layout,
+  component: Layout
 } as ComponentMeta<typeof Layout>
 
 export const LayoutDefault = () =>

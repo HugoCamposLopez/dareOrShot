@@ -16,22 +16,24 @@ const RSButton = ({
   onClick,
   sumbit,
   loading,
-  isDisable,
+  isDisable
 }: RSButtonProps) => {
   const intl = useIntl()
   return (
     <UnstyledButton
-      className={`button-principal ${!isDisable ? "" : "isValid"}`}
-      color={'white'}
+      className={`button-principal ${!isDisable ? '' : 'isValid'}`}
+      color='white'
       onClick={onClick}
       type={sumbit ? 'submit' : 'button'}
       disabled={isDisable || loading}
     >
-      {loading ? (
-        <Loader size={'sm'} />
-      ) : (
-        <span>{intl.formatMessage({ id: title })}</span>
-      )}
+      {loading
+        ? (
+          <Loader size='sm' />
+          )
+        : (
+          <span>{intl.formatMessage({ id: title })}</span>
+          )}
     </UnstyledButton>
   )
 }

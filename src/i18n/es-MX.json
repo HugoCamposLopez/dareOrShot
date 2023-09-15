@@ -17,5 +17,6 @@
     "names.text.1": "Para empezar no se como se llaman...",
     "names.text.2": "Escribe el nombre de cada jugador",
     "numbers.of.players.text": "Elige el numero de jugadores que desean jugar.",
-    "errors.number.of.players": "¿Cómo quieres avanzar si no has escogido el número de jugadores?"
+    "errors.number.of.players": "¿Cómo quieres avanzar si no has escogido el número de jugadores?",
+    "restart.game.button": "Reiniciar juego"
   }

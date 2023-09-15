@@ -5,14 +5,20 @@ import RSRadioButton from './RSRadioButton'
 
 export default {
   title: 'components/RSRadioButton',
-  component: RSRadioButton,
+  component: RSRadioButton
 } as ComponentMeta<typeof RSRadioButton>
 
 export const RSRadioButtonDefault = () => {
   const [value1, setValue1] = useState('')
-  const options = {
-    value: "Hello",
-    label: "1"
-  }
-  return withProviders(<RSRadioButton onChange={setValue1} value={value1} options={options}/>)
+  const options = [{
+    value: '0',
+    label: "'component.radio.button.0"
+  }, {
+    value: '1',
+    label: "'component.radio.button.1"
+  }, {
+    value: '2',
+    label: "'component.radio.button.2"
+  }]
+  return withProviders(<RSRadioButton onChange={setValue1} value={value1} options={options} />)
 }

@@ -1,1 +1,28 @@
 @import '/src/theme/index.scss';
+
+.game_play_container{
+
+  height: max-content;
+  .text_container{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 40px;
+    .name_text{
+      font-family: $font-family-primary-medium;
+      color: black;
+      font-weight: $medium;
+      width: fit-content;
+      align-self: center;
+      text-decoration: underline;
+    }
+    .dare_text{
+      font-family: $font-family-primary-medium;
+      color: white;
+      font-weight: $medium;
+    }
+
+  }
+  
+}

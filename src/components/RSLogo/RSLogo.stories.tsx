@@ -1,6 +1,6 @@
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import withProviders from "../../utils/withProviders";
-import RSLogo, { RSLogoI } from "./RSLogo";
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
+import withProviders from '../../utils/withProviders'
+import RSLogo, { RSLogoI } from './RSLogo'
 
 export default {
   title: 'components/Logo',
@@ -11,8 +11,8 @@ const onClickLogo = () => {
   alert('Click')
 }
 
-export const DefaultCircledLogo: ComponentStoryObj<typeof RSLogo> = ({onClick}: RSLogoI) => withProviders(<RSLogo onClick={onClick}/>)
+export const DefaultCircledLogo: ComponentStoryObj<typeof RSLogo> = ({ onClick }: RSLogoI) => withProviders(<RSLogo onClick={onClick} />)
 
-DefaultCircledLogo.args={
+DefaultCircledLogo.args = {
   onClick: onClickLogo
 }

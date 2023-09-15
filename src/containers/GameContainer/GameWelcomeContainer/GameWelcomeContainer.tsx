@@ -8,13 +8,13 @@ import './styles.scss'
 const GameWelcomeContainer = () => {
   const dispatch = useDispatch()
   return (
-    <div className="welcome-container">
-      <div className="logo-container">
+    <div className='welcome-container'>
+      <div className='logo-container'>
         <RSLogo />
       </div>
-      <div className="start-game-button-container">
+      <div className='start-game-button-container'>
         <RSButton
-          title={'start.game'}
+          title='start.game'
           onClick={() => dispatch(changeState(AppStates.rules))}
         />
       </div>

@@ -10,14 +10,14 @@ const Routing = () => {
   return (
     <Routes>
       <Route
-        path="/"
+        path='/'
         element={<WithProtectedRoutes stateOfUser={stateOfGame} />}
       >
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/game" element={<GameScreen />} />
+        <Route path='/' element={<HomeScreen />} />
+        <Route path='/game' element={<GameScreen />} />
       </Route>
       <Route
-        path="*"
+        path='*'
         element={<WithProtectedRoutes stateOfUser={stateOfGame} />}
       />
     </Routes>

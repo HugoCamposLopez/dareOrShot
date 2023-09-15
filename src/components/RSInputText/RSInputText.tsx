@@ -12,7 +12,7 @@ export const RSInputText = ({
   placeholder,
   isError,
   onChange,
-  value,
+  value
 }: RSInputTextProps) => {
   const intl = useIntl()
   return (
@@ -23,12 +23,12 @@ export const RSInputText = ({
         onChange={onChange}
         error={isError}
         icon={
-          <Image width={25} height={25} src="./icons/glass-user-icon.svg" />
+          <Image width={25} height={25} src='./icons/glass-user-icon.svg' />
         }
         placeholder={intl.formatMessage({ id: placeholder })}
       />
       {isError && (
-        <p className="errorMessage">
+        <p className='errorMessage'>
           {intl.formatMessage({ id: 'component.text.error.text' })}
         </p>
       )}

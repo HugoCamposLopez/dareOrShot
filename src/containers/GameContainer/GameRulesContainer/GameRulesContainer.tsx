@@ -10,16 +10,16 @@ const GameRulesContainer = () => {
   const dispatch = useDispatch()
   const intl = useIntl()
   return (
-    <div className="rules-container">
-      <Text className="rules-description-1">
+    <div className='rules-container'>
+      <Text className='rules-description-1'>
         {intl.formatMessage({ id: 'rules.text.1' })}
       </Text>
-      <Text className="rules-description-2">
+      <Text className='rules-description-2'>
         {intl.formatMessage({ id: 'rules.text.2' })}
       </Text>
-      <div className="button-container">
+      <div className='button-container'>
         <RSButton
-          title="continue"
+          title='continue'
           onClick={() => dispatch(changeState(AppStates.nameOfPlayers))}
         />
       </div>

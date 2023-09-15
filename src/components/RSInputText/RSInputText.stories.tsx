@@ -1,18 +1,18 @@
 import { ComponentMeta, ComponentStoryObj } from '@storybook/react'
-import { useCallback, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import withProviders from '../../utils/withProviders'
 import { RSInputText, RSInputTextProps } from './RSInputText'
 
 export default {
   title: 'components/RSInputText',
-  component: RSInputText,
+  component: RSInputText
 } as ComponentMeta<typeof RSInputText>
 
 export const DefaultInputText: ComponentStoryObj<typeof RSInputText> = ({
   placeholder,
   isError,
   onChange,
-  value,
+  value
 }: RSInputTextProps) => {
   const [value1, setValue] = useState<any>('')
 
@@ -35,7 +35,7 @@ export const DefaultInputText: ComponentStoryObj<typeof RSInputText> = ({
 export const ErrorInputText: ComponentStoryObj<typeof RSInputText> = ({
   placeholder,
   isError,
-  onChange,
+  onChange
 }: RSInputTextProps) => {
   const [value1, setValue] = useState<any>('')
 
@@ -57,10 +57,10 @@ export const ErrorInputText: ComponentStoryObj<typeof RSInputText> = ({
 
 DefaultInputText.args = {
   placeholder: 'component.text.placeholder',
-  isError: false,
+  isError: false
 }
 
 ErrorInputText.args = {
   placeholder: 'component.text.placeholder',
-  isError: true,
+  isError: true
 }

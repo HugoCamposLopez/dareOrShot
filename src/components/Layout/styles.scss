@@ -2,16 +2,19 @@
 .layout-container{
   background-color: $color-primary-background;
   text-align: center;
-  .logo-container {
+  padding: 20px;
+  height: 100vh;
+  
+  .nav-container{
+    display: flex;
     width: 100%;
-    background-color: $color-primary-background;
-    text-align: center;
     min-height: $header-height;
+    align-items: center;
+    justify-content: space-between;
     
-    .img-logo {
-      width: 100%;
-      display: grid;
-      place-items: center;
-    }
+.nav-bar-left{
+  width: 130px;
+}
+
   }
 }

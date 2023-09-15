@@ -1,7 +1,6 @@
 @import '/src/theme/index.scss';
 
 .text-input-container {
-
   &.error {
     .mantine-TextInput-input {
       border-color: $color-warning;
