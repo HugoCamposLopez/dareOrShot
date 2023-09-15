@@ -1,0 +1,16 @@
+@import '/src/theme/index.scss';
+
+.gametype-container{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  .title{
+    font-family: $font-family-primary-regular;
+    font-size: 18px;
+    font-weight: $bold;
+    color: $color-tertiary-background;
+  }
+
+}

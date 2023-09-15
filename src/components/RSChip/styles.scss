@@ -1,0 +1,20 @@
+@import '/src/theme/index.scss';
+.container-chip{
+  width: fit-content;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid $color-black;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  background-color: $color-tertiary-background;
+  
+  .chip-x-icon{
+    cursor: pointer;
+    
+  }
+  &:hover{
+    box-shadow: $shadow-inputs;
+
+  }
+}

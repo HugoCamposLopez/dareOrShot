@@ -1,0 +1,21 @@
+@import '/src/theme/index.scss';
+
+.button-principal {
+  height: 45px;
+  box-shadow: 0px 0px 5px 1px $color-gray;
+  border-radius: 10px;
+  padding: 8px 8px;
+  min-width: 130px;
+  text-align: center;
+  box-shadow: $shadow-inputs;
+  background-color: $color-background-button;
+  &.isValid{
+    cursor: auto;
+    background-color: $color-background-button-disabled 
+  }
+  span {
+    font-family: $font-family-primary-semibold;
+    font-size: 14px;
+    color: $color-text-button;
+  }
+}
