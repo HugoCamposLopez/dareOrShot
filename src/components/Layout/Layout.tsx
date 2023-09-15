@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className='nav-container'>
         <div className='nav-bar-left' />
         <div className='img-logo'>
-          <Image src='./logo/logo.png' width={110} height={100} />
+          <Image src='/dareOrShot/logo/logo.png' width={110} height={100} />
         </div>
         <div>
           <RSButton
