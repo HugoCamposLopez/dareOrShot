@@ -20,7 +20,6 @@ const GamePlayContainer = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [playerState, setPlayerState] = useState(0)
   const [dareState, setDareState] = useState(0)
-  console.log(player)
 
   function ToPlay(): JSX.Element {
     let numbersUsed = []

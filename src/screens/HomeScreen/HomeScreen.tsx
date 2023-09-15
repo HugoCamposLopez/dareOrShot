@@ -7,7 +7,6 @@ import GameScreen from '../GameScreen/GameScreen'
 
 const HomeScreen = () => {
   const { stateOfGame } = useSelector((state: RootState) => state.userState)
-  console.log(stateOfGame)
     const isHomeOrGame = useCallback(() => {
       switch (stateOfGame) {
         case AppStates.initial:
